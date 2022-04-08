@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: chocolate;
+        height: 100px;
+      }
+      main {
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+      }
+      .product {
+        padding: 10px;
+        border: 1px solid black;
+      }
+      .product img {
+        width: 100%;
+      }
+
+      footer {
+        /* clear: both; */
+        background-color: rgb(99, 67, 67);
+        height: 100px;
+      }
+      /* Mobile */
+      @media screen and (max-width: 500px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Tablet */
+      @media screen and (min-width: 501px) and (max-width: 700px) {
+        main {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Đây là header</header>
+    <main>
+      <div class="product">
+        <img
+          src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+          quisquam.
+        </p>
+      </div>
+      <div class="product">
+        <img
+          src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+          quisquam.
+        </p>
+      </div>
+      <div class="product">
+        <img
+          src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+          quisquam.
+        </p>
+      </div>
+      <div class="product">
+        <img
+          src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+          quisquam.
+        </p>
+      </div>
+    </main>
+    <footer>Đây là footer</footer>
+  </body>
+</html>
