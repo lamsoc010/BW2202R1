@@ -38,40 +38,92 @@
 /*  */
 .div2 {
     height: 200px;
+    width: 100%;
     background-color: rgb(179, 202, 45);
 }
 .div3 {
     height: 200px;
+    width: 100%;
     background-color: rgb(47, 194, 91);
 }
 .div4 {
     height: 200px;
+    width: 100%;
     background-color: rgb(45, 184, 202);
 }
 .div5 {
     height: 200px;
+    width: 100%;
     background-color: rgb(131, 45, 202);
 }
 .div6 {
     height: 200px;
+    width: 100%;
     background-color: rgb(37, 85, 48);
 }
 .div7 {
     height: 200px;
+    width: 100%;
     background-color: rgb(33, 172, 177);
 }
 .div8 {
     height: 200px;
+    width: 100%;
     background-color: rgb(45, 74, 202);
 }
 /* main */
 .main {
     display:  grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.section {
+    display:  grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* footer */
 .footer {
     clear: both;
     height: 100px;
+    width: 100%;
     background-color: rgb(248, 35, 152);
+}
+
+@media screen and (max-width: 576px){
+    .main {
+        display:  grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .section {
+        display:  grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .main {
+        display:  grid;
+        grid-template-columns: 70% 30%;
+        grid-template-areas: 
+        "h1 h1"
+        "h2 h3";
+    }
+    .div2 {
+        grid-area: h1;
+    }
+    .div3 {
+        grid-area: h2;
+    }
+    .div4 {
+        grid-area: h3;
+    }
+    .section {
+        display:  grid;
+        grid-template-columns: 1fr 1fr;
+    }
+/* col tablet*/
+}
+
+@media screen and (min-width: 993px){
+    /* col pc*/
 }
